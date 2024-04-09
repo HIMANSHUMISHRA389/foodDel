@@ -1,0 +1,98 @@
+.mainNavbar {
+  width: 80vw;
+  /* background: yellow; */
+  margin: 5px auto;
+  display: flex;
+  justify-content: space-between;
+  font-family: "Roboto", sans-serif;
+  align-items: center;
+  margin-top: 2.5vh;
+}
+.navbar_logo {
+  flex: 1;
+  cursor: pointer;
+}
+.navbar_links {
+  flex: 1.5;
+}
+
+.mainNavbar div > ul {
+  display: flex;
+  list-style-type: none;
+  justify-content: space-around;
+  padding: 8px 12px;
+  /* background: blue; */
+  width: 72%;
+  margin: 0 auto;
+  align-items: center;
+  cursor: pointer;
+}
+.mainNavbar ul li {
+  cursor: pointer;
+  padding: 5px;
+}
+.mainNavbar ul .active {
+  border-bottom: 1px solid black;
+}
+.mainNavbar ul li:hover {
+  background-color: whitesmoke;
+  border-radius: 8px;
+}
+.navbar_icons {
+  flex: 1.5;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  align-items: center;
+  position: relative;
+  cursor: pointer;
+}
+.navbar_icons > div {
+  display: flex;
+  justify-content: space-around;
+  width: 40%;
+}
+.dot {
+  min-width: 12px;
+  min-height: 12px;
+  position: absolute;
+  right: 56%;
+  top: 15%;
+  background: red;
+  border-radius: 60%;
+  border: 1px solid black;
+  text-align: center;
+}
+
+.navbar_icons > button {
+  border-radius: 20px;
+  width: 100px;
+  height: 42px;
+  cursor: pointer;
+  border-style: none;
+  color: white;
+  background-color: palevioletred;
+  font-weight: bolder;
+}
+
+@media (max-width: 750px) {
+    .mainNavbar{
+        width: 90vw;
+        margin: 4% auto;
+        justify-content: space-between;
+    }
+    .navbar_links{
+        display: none;
+        
+    }
+    .navbar_logo img{
+        width: 100%;
+    }
+    .navbar_icons img{
+        width: 35%;
+    }
+    .mainNavbar .navbar_icons button{
+        width: 45%;
+       
+    }
+}

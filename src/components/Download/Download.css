@@ -1,0 +1,48 @@
+.download_main {
+  display: flex;
+  height: 30vh;
+  width: 82vw;
+  margin: 1% auto;
+  flex-direction: column;
+  justify-content: space-around;
+ text-align: center;
+}
+.download_main .download_bottom{
+    display: flex;
+justify-content: space-around;
+align-items: center;
+width: 40vw;
+margin: 0 auto;
+
+}
+.download_bottom img{
+    width: 30%;
+    height: 100%;
+    border-radius: 16px;
+    border: none;
+}
+@media (max-width:750px){
+.download_main {
+  display: flex;
+  height: 30vh;
+  width: 82vw;
+  margin: 1% auto;
+  flex-direction: column;
+  justify-content: space-around;
+ text-align: center;
+}
+.download_main .download_bottom{
+    display: flex;
+justify-content: space-around;
+align-items: center;
+width: 90%;
+margin: 0px;
+
+}
+.download_bottom img{
+    width: 55%;
+    height: 100%;
+    border-radius: 16px;
+    border: none;
+}
+}
